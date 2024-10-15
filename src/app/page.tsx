@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     // if (typeof window !== "undefined") {
-    const ws = new WebSocket("ws://192.168.1.11:8000/ws/stream");
+    const ws = new WebSocket("wss://192.168.1.11:8000/ws/stream");
 
     ws.onopen = () => {
       setConnectionStatus("Connected");
