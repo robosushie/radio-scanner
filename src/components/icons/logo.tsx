@@ -1,5 +1,5 @@
 import React from "react";
-const Logo: React.FC<{}> = () => {
+const Logo = () => {
   return (
     <div className="relative h-full aspect-square flex justify-center items-center">
       <svg

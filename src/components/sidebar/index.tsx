@@ -5,7 +5,7 @@ import Play from "@/components/icons/play";
 import Close from "../icons/close";
 import Pause from "../icons/pause";
 
-export const Sidebar: React.FC<{}> = () => {
+export const Sidebar = () => {
   const [expandSidebar, setExpandSidebar] = useState(false);
 
   return (

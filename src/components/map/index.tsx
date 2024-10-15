@@ -4,11 +4,13 @@ import Close from "../icons/close";
 
 import { AdvancedMarker, APIProvider, Map } from "@vis.gl/react-google-maps";
 
-export const MapPlotter: React.FC<{}> = () => {
+export const MapPlotter = () => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
   const [expandMap, setExpandMap] = useState(false);
+  // @ts-ignore
   const [zoom, setZoom] = useState(16);
   const [position, setPosition] = useState({ lat: 28.6139, lng: 77.2088 });
+  // @ts-ignore
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -64,6 +66,7 @@ export const MapPlotter: React.FC<{}> = () => {
     fetchPosition();
 
     // Set up the interval to fetch position every 30 seconds (30000 milliseconds)
+    // @ts-ignore
     intervalId = window.setInterval(fetchPosition, 30000);
 
     // Cleanup function

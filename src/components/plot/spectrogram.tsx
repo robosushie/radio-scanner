@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 // Dynamically load Plotly without SSR
 const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
+// @ts-ignore
 export const Spectrogram: React.FC<{ data: any }> = ({ data }) => {
   const [mounted, setMounted] = useState(false);
 

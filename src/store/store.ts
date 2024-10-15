@@ -1,5 +1,4 @@
 import { create } from "zustand";
-import { persist, subscribeWithSelector } from "zustand/middleware";
 
 type State = {
   baseUrl: string;
@@ -16,7 +15,7 @@ type State = {
   setSamplingRate: (val: string) => void;
 };
 
-const useStore = create<State>((set, get) => ({
+const useStore = create<State>((set) => ({
   baseUrl: "http://192.168.1.8:8000",
   // baseUrl: "https://refined-magnetic-buck.ngrok.io",
   gain: "0",

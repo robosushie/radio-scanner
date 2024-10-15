@@ -1,5 +1,5 @@
 import React from "react";
-const ChevronLeft: React.FC<{}> = () => {
+const ChevronLeft = () => {
   return (
     <div className="relative h-full aspect-square flex justify-center items-center">
       <svg

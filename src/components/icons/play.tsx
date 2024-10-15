@@ -1,5 +1,5 @@
 import React from "react";
-const Play: React.FC<{}> = () => {
+const Play = () => {
   return (
     <div className="relative h-full aspect-square flex justify-center items-center">
       <svg
