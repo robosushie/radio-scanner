@@ -166,14 +166,12 @@ export const MapPlotter = () => {
                 lng: pos.coords.longitude,
               });
               setError(null);
-              setIsLoading(false);
             }
           },
           (err) => {
             console.error("Geolocation error:", err);
             if (isMounted) {
               setError(err.message);
-              setIsLoading(false);
             }
           },
           {
